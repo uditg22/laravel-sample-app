@@ -11,7 +11,5 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 ## Steps to run this application
 
 * Checkout the code on your local machine
-* Run command : composer install
-* Copy .env.example file to .env file
 * Start the Laravel Server using command : php artisan serve
 * Open following link in your browser : http://localhost:8000 and it should successfully display Products Screen

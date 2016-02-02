@@ -10,11 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -25,13 +20,14 @@ Route::get('/', function () {
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
-Route::group(['middleware' => ['web']], function () {
-    //
-});
-
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/home', 'HomeController@index');
+
+    // Product Routes. Using default(/) for demo purpose
+    Route::get('/', 'ProductController@index');
+    Route::post('/products', 'ProductController@store');
+    Route::get('/products/{product}', 'ProductController@edit');
+    Route::put('/products/{product}', 'ProductController@update');
 });

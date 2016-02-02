@@ -17,4 +17,4 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 * Update the .env file with the new database name, database user and database password
 * Start the Mysql daemon or service on your local machine
 * Start the Laravel Server using command : php artisan serve
-* Open following link in your browser : http://localhost:8000 and it should successfully display Laravel 5.
+* Open following link in your browser : http://localhost:8000 and it should successfully display Home screen.
